@@ -1,0 +1,181 @@
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'TT Lakes', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    max-width: 1120px;
+}
+
+.brands__top {
+    background-color: #FFFFFF;
+    border-top: 1px solid #D9FFF5;
+}
+
+.brands__title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #7E7E82;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 32px;
+    margin-right: auto;
+    text-transform: uppercase;
+}
+
+.brands__layout {
+    padding-bottom: 34px;
+    background-color: #F8F8F8;
+    overflow: hidden;
+}
+
+.brands__swiper {
+    position: relative;
+    padding-top: 16px;
+}
+
+.swiper {
+    max-width: 258px;
+    overflow: visible;
+    margin: 0;
+    margin-left: 16px;
+    position: static;
+}
+
+.swiper--blur::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    background: linear-gradient(to right, transparent, #F8F8F8);
+    z-index: 10;
+}
+
+.swiper-wrapper {
+    justify-content: flex-start;
+    margin-right: 16px;
+}
+
+.swiper-pagination {
+    position: static;
+    margin-top: 16px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #B5B6BC;
+    width: 12px;
+    height: 12px;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 6px;
+}
+
+.brands__list {
+    margin: 0;
+    padding: 24px;
+    list-style-type: none;
+    display: none;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 24px;
+    row-gap: 16px;
+}
+
+.brands__item {
+    position: relative;
+    display: none;
+}
+
+.brands__item--visible {
+    display: list-item;
+}
+
+.brands__link {
+    position: relative;
+    display: block;
+    height: 72px;
+    min-width: 200px;
+    max-width: 240px;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;
+}
+
+.brands__link::after {
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/go.svg");
+}
+
+.brands__link--lenovo {
+    background: #fff url("../img/lenovo.svg") no-repeat 16px center;
+}
+
+.brands__link--samsung {
+    background: #fff url("../img/samsung.svg") no-repeat 16px center;
+}
+
+.brands__link--apple {
+    background: #fff url("../img/apple.svg") no-repeat 16px center;
+}
+
+.brands__link--viewsonic {
+    background: #fff url("../img/viewsonic.svg") no-repeat 16px center;
+}
+
+.brands__link--bosch {
+    background: #fff url("../img/bosch.svg") no-repeat 16px center;
+}
+
+.brands__link--hp {
+    background: #fff url("../img/hp.svg") no-repeat 16px center;
+}
+
+.brands__link--acer {
+    background: #fff url("../img/acer.svg") no-repeat 16px center;
+}
+
+.brands__link--sony {
+    background: #fff url("../img/sony.svg") no-repeat 16px center;
+}
+
+.brands__expand {
+    margin-left: 24px;
+}
+
+.brands__button {
+    display: none;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    font-family: 'TT Lakes', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.brands__button::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url("../img/updown.svg") no-repeat center;
+    margin-right: 8px;
+}
+
+.brands__button--hide::before {
+    content: "";
+    transform: rotate(180deg);
+}
