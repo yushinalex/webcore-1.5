@@ -4,17 +4,15 @@
     }
 
     .brands__list {
-        margin: 0;
-        padding: 24px;
-        list-style-type: none;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        column-gap: 24px;
-        row-gap: 16px;
     }
 
     .brands__item:nth-child(-n + 6) {
-        display: list-item;
+        display: block;
+    }
+
+    .brands__link {
+        max-width: 280px;
     }
 
     .brands__button {
@@ -29,7 +27,7 @@
     }
 
     .brands__item:nth-child(-n + 8) {
-        display: list-item;
+        display: block;
     }
 
     .brands__expand {

@@ -95,7 +95,7 @@ body {
 }
 
 .brands__item--visible {
-    display: list-item;
+    display: block;
 }
 
 .brands__link {
