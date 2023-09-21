@@ -100,7 +100,7 @@ body {
 
 .brands__link {
     position: relative;
-    display: block;
+    display: flex;
     height: 72px;
     min-width: 200px;
     max-width: 240px;
@@ -110,46 +110,34 @@ body {
     border: 1px solid #EAEAEA;
 }
 
-.brands__link::after {
+.brands__link::before {
     content: "";
     position: absolute;
     right: 16px;
     top: 16px;
     width: 40px;
     height: 40px;
-    background-image: url("../img/go.svg");
+    border: 2px solid #FF3E79;
+    border-radius: 50%;
 }
 
-.brands__link--lenovo {
-    background: #fff url("../img/lenovo.svg") no-repeat 16px center;
+.brands__link::after {
+    content: "";
+    position: absolute;
+    right: 34px;
+    top: 32px;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #FF3E79;
+    border-right: 2px solid #FF3E79; 
+    transform: rotate(45deg);
 }
 
-.brands__link--samsung {
-    background: #fff url("../img/samsung.svg") no-repeat 16px center;
-}
-
-.brands__link--apple {
-    background: #fff url("../img/apple.svg") no-repeat 16px center;
-}
-
-.brands__link--viewsonic {
-    background: #fff url("../img/viewsonic.svg") no-repeat 16px center;
-}
-
-.brands__link--bosch {
-    background: #fff url("../img/bosch.svg") no-repeat 16px center;
-}
-
-.brands__link--hp {
-    background: #fff url("../img/hp.svg") no-repeat 16px center;
-}
-
-.brands__link--acer {
-    background: #fff url("../img/acer.svg") no-repeat 16px center;
-}
-
-.brands__link--sony {
-    background: #fff url("../img/sony.svg") no-repeat 16px center;
+.brands__image {
+    display: block;
+    margin-left: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .brands__expand {
